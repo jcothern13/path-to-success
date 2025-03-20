@@ -230,10 +230,45 @@ h4{
     font-weight: bold;
 }
 
-#why-choose-us li:nth-child(1) { background-color: var(--teal); }
-#why-choose-us li:nth-child(2) { background-color: var(--lavender); }
-#why-choose-us li:nth-child(3) { background-color: var(--yellow); }
-#why-choose-us li:nth-child(4) { background-color: var(--white); }
+#why-choose-us li.one{ 
+    background-color: var(--teal);
+}
+#why-choose-us li.two{
+    background-color: var(--lavender);
+}
+#why-choose-us li.three{
+    background-color: var(--yellow);
+}
+#why-choose-us li.four{
+    background-color: var(--white);
+}
+
+#pricing{
+    padding-bottom: 5px;
+}
+
+#pricing h3{
+    padding: 10px;
+}
+#pricing table{
+    margin: 0 auto;
+}
+
+#pricing th{
+    background-color: var(--yellow);
+    font-weight: bold;
+    padding: 10px;
+    border-color: var(--yelow);
+}
+
+#pricing td{
+    background-color: var(--white);
+    padding: 10px;
+}
+
+
+
+
 
 #first-step{
     background-color: var(--pink);
