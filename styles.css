@@ -81,47 +81,191 @@ body{
     text-align: center;
 }
 
+main{
+    background-color: var(--purple);
+    margin: 0 auto;
+    width: 450px;
+    align-items: center;
+}
+
 /* header */
 header{
     background-color: var(--purple);
     color: var(--white);
-    padding: 20px;
+    padding: 12px 0;
+    width: 450px;
+    margin: 0 auto;
+    
 }
 
-h1, h2 {
-    font-family: var(--font-heading);
-}
-
-h1{
-    font-size: var(--h1-size);
-}
-
-nav h2{
-    font-size: var(--nav-h2-size);
+header p{
     font-style: italic;
+    padding: 10px 0 50px 0;
+}
+
+header h1, h2 {
+    font-family: var(--font-heading);
+    font-size: var(--h1-size);
 }
 
 /* nav menu */
 nav{
     background-color: var(--yellow);
-    padding: 10px;
+    padding: 15px;
 }
 
 nav ul{
     list-style: none;
-    padding: 0;
+    
 }
 
 nav ul li{
     margin: 10px 0;
+    background-color: var(--white);
 }
 
-nav u li a{
+nav ul li a{
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;
     display: block;
     padding: 10px;
     text-decoration: none;
-    background-color: var(--white);
+    color: var(--purple);
+    text-transform: uppercase;
+}
+
+nav h2{
+    font-size: var(--nav-h2-size);
+    font-style: italic;
+    font-family: var(--font-body);
+    font-weight: bold;
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* headings */
+h2{
+    font-size: var(--h2-size);
+    font-family: var(--font-heading);
+    color: var(--white);
+    text-align: left;
     
 }
+
+h3{
+    font-size: var(--h3-size);
+    font-weight: bold;
+    color: var(--yellow);
+    text-align: left;
+    padding-left: 10px;
+}
+
+h4{
+    font-size: var(--h4-size);
+    color: var(--purple);
+    font-weight: bold;
+}
+
+
+/* sections */
+
+#services section{
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#services h2{
+    padding-left: 10px;
+}
+
+#group-coaching section{
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#workshops section{
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#online section{
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#why-choose-us{
+    background-color: var(--pink);
+}
+
+#why-choose-us h2{
+    padding: 10px 0 0 10px;
+}
+
+#why-choose-us ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    list-style: none;
+    padding: 0 10px 10px 10px;
+    margin: 20px 10px;
+}
+
+#why-choose-us li{
+    background-color: var(--teal);
+    padding: 30px 0;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#why-choose-us li:nth-child(1) { background-color: var(--teal); }
+#why-choose-us li:nth-child(2) { background-color: var(--lavender); }
+#why-choose-us li:nth-child(3) { background-color: var(--yellow); }
+#why-choose-us li:nth-child(4) { background-color: var(--white); }
+
+#first-step{
+    background-color: var(--pink);
+    color: var(--white);
+    text-align: left;
+    padding: 15px 15px;
+}
+
+#first-step h2{
+    text-align: left;
+}
+
+#first-step a {
+    display: block;
+    margin: 10px auto 0 auto;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--dark-gray); 
+    text-align: center;
+}
+
+
+footer{
+    width: 450px;
+    background-color: var(--purple);
+    color: var(--white);
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+
+
