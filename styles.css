@@ -52,5 +52,76 @@ table {
 	border-spacing: 0;
 }
 /* ROOT VARIABLES */
+:root{
+    --font-heading: 'Kavoon', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --h1-size: 3em;
+    --nav-h2-size: 1.5em;
+    --h2-size: 2em;
+    --h3-size: 1.5em;
+    --h4-size: 1.15em;
+
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #FFFFFF;
+    
+}
 
 /* GLOBAL STYLES (mobile first/small) */
+
+body{
+    font-family: var(--font-body);
+    background-color: var(--lavender);
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+/* header */
+header{
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: var(--font-heading);
+}
+
+h1{
+    font-size: var(--h1-size);
+}
+
+nav h2{
+    font-size: var(--nav-h2-size);
+    font-style: italic;
+}
+
+/* nav menu */
+nav{
+    background-color: var(--yellow);
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    margin: 10px 0;
+}
+
+nav u li a{
+    font-weight: bold;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--white);
+    
+}
