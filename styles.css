@@ -84,7 +84,7 @@ body{
 main{
     background-color: var(--purple);
     margin: 0 auto;
-    width: 450px;
+    max-width: 450px;
     align-items: center;
 }
 
@@ -93,7 +93,7 @@ header{
     background-color: var(--purple);
     color: var(--white);
     padding: 12px 0;
-    width: 450px;
+    max-width: 450px;
     margin: 0 auto;
     
 }
@@ -206,6 +206,8 @@ h4{
     text-align: left;
 }
 
+/*-- why-choose-us section --*/
+
 #why-choose-us{
     background-color: var(--pink);
 }
@@ -243,32 +245,36 @@ h4{
     background-color: var(--white);
 }
 
+/*-- pricing section --*/
+
 #pricing{
     padding-bottom: 5px;
 }
-
+#pricing h2{
+    padding-left: 10px;
+}
 #pricing h3{
     padding: 10px;
 }
 #pricing table{
     margin: 0 auto;
+    border:1px solid var(--yellow);
 }
 
 #pricing th{
     background-color: var(--yellow);
+    text-transform: uppercase;
     font-weight: bold;
     padding: 10px;
-    border-color: var(--yelow);
 }
 
 #pricing td{
     background-color: var(--white);
     padding: 10px;
+    border:1px solid var(--yellow);
 }
 
-
-
-
+/*-- first-step section --*/
 
 #first-step{
     background-color: var(--pink);
@@ -279,6 +285,7 @@ h4{
 
 #first-step h2{
     text-align: left;
+    padding-bottom: 5px;
 }
 
 #first-step a {
@@ -287,15 +294,18 @@ h4{
     background-color: var(--white);
     color: var(--dark-gray);
     text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
     padding: 15px 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--dark-gray); 
-    text-align: center;
+    
 }
 
 
 footer{
-    width: 450px;
+    max-width: 450px;
     background-color: var(--purple);
     color: var(--white);
     margin: 0 auto;
