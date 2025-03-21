@@ -170,35 +170,13 @@ h4{
 
 /* sections */
 
-#services section{
-    padding: 10px;
-    margin: 15px;
-    background-color: var(--white);
-    border-radius: 10px;
-    text-align: left;
-}
-
 #services h2{
     padding-left: 10px;
 }
 
-#group-coaching section{
-    padding: 10px;
-    margin: 15px;
-    background-color: var(--white);
-    border-radius: 10px;
-    text-align: left;
-}
-
-#workshops section{
-    padding: 10px;
-    margin: 15px;
-    background-color: var(--white);
-    border-radius: 10px;
-    text-align: left;
-}
-
-#online section{
+#services section, #group-coaching section,
+#workshops section,
+#online section {
     padding: 10px;
     margin: 15px;
     background-color: var(--white);
@@ -257,6 +235,7 @@ h4{
     padding: 10px;
 }
 #pricing table{
+    
     margin: 0 auto;
     border:1px solid var(--yellow);
 }
@@ -287,6 +266,9 @@ h4{
     text-align: left;
     padding-bottom: 5px;
 }
+#first-step p{
+    padding: 5px;
+}
 
 #first-step a {
     display: block;
@@ -304,12 +286,21 @@ h4{
 }
 
 
-footer{
+footer {
     max-width: 450px;
     background-color: var(--purple);
     color: var(--white);
     margin: 0 auto;
     padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--font-body);
+}
+
+footer a, footer p{
+    color: var(--white);
+    text-decoration: none;
+    padding: 20px 0;
 }
 
 
