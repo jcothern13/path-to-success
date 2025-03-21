@@ -92,15 +92,14 @@ main{
 header{
     background-color: var(--purple);
     color: var(--white);
-    padding: 12px 0;
+    padding: 15px 0;
     max-width: 450px;
     margin: 0 auto;
-    
 }
 
 header p{
     font-style: italic;
-    padding: 10px 0 50px 0;
+    padding: 10px 0 40px 0;
 }
 
 header h1, h2 {
@@ -109,31 +108,6 @@ header h1, h2 {
 }
 
 /* nav menu */
-nav{
-    background-color: var(--yellow);
-    padding: 15px;
-}
-
-nav ul{
-    list-style: none;
-    
-}
-
-nav ul li{
-    margin: 10px 0;
-    background-color: var(--white);
-}
-
-nav ul li a{
-    font-weight: bold;
-    border-radius: 8px;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: var(--purple);
-    text-transform: uppercase;
-}
-
 nav h2{
     font-size: var(--nav-h2-size);
     font-style: italic;
@@ -144,13 +118,38 @@ nav h2{
     text-align: center;
 }
 
+nav{
+    background-color: var(--yellow);
+    padding: 15px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    margin: 10px 0;
+    background-color: var(--white);
+}
+
+nav ul li a{
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--purple);
+}
+
 /* headings */
 h2{
     font-size: var(--h2-size);
     font-family: var(--font-heading);
     color: var(--white);
     text-align: left;
-    
+    padding-left: 10px;
 }
 
 h3{
@@ -165,14 +164,13 @@ h4{
     font-size: var(--h4-size);
     color: var(--purple);
     font-weight: bold;
+    padding: 0 0 5px 5px;
 }
-
+p{
+    padding-left: 5px;
+}
 
 /* sections */
-
-#services h2{
-    padding-left: 10px;
-}
 
 #services section, #group-coaching section,
 #workshops section,
@@ -189,11 +187,9 @@ h4{
 #why-choose-us{
     background-color: var(--pink);
 }
-
 #why-choose-us h2{
-    padding: 10px 0 0 10px;
+    padding:10px 0 0 10px;
 }
-
 #why-choose-us ul {
     display: grid;
     grid-template-columns: auto auto;
@@ -208,6 +204,7 @@ h4{
     padding: 30px 0;
     border-radius: 10px;
     font-weight: bold;
+    
 }
 
 #why-choose-us li.one{ 
@@ -228,14 +225,10 @@ h4{
 #pricing{
     padding-bottom: 5px;
 }
-#pricing h2{
-    padding-left: 10px;
-}
 #pricing h3{
     padding: 10px;
 }
 #pricing table{
-    
     margin: 0 auto;
     border:1px solid var(--yellow);
 }
@@ -259,15 +252,15 @@ h4{
     background-color: var(--pink);
     color: var(--white);
     text-align: left;
-    padding: 15px 15px;
+    padding: 0 10px 10px 10px;
 }
 
 #first-step h2{
     text-align: left;
-    padding-bottom: 5px;
+    padding: 10px 0 5px 5px;
 }
 #first-step p{
-    padding: 5px;
+    padding: 10px;
 }
 
 #first-step a {
@@ -282,7 +275,7 @@ h4{
     padding: 15px 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px var(--dark-gray); 
-    
+    width: 300px;
 }
 
 
@@ -294,7 +287,6 @@ footer {
     padding: 15px 0;
     display: flex;
     justify-content: space-around;
-    font-family: var(--font-body);
 }
 
 footer a, footer p{
