@@ -88,62 +88,6 @@ main{
     align-items: center;
 }
 
-/* header */
-header{
-    background-color: var(--purple);
-    color: var(--white);
-    padding: 15px 0;
-    max-width: 450px;
-    margin: 0 auto;
-}
-
-header p{
-    font-style: italic;
-    padding: 10px 0 40px 0;
-}
-
-header h1, h2 {
-    font-family: var(--font-heading);
-    font-size: var(--h1-size);
-}
-
-/* nav menu */
-nav h2{
-    font-size: var(--nav-h2-size);
-    font-style: italic;
-    font-family: var(--font-body);
-    font-weight: bold;
-    color: var(--dark-gray);
-    text-transform: uppercase;
-    text-align: center;
-}
-
-nav{
-    background-color: var(--yellow);
-    padding: 15px;
-}
-
-nav ul{
-    list-style: none;
-}
-
-nav ul li{
-    margin: 10px 0;
-    background-color: var(--white);
-}
-
-nav ul li a{
-    font-weight: bold;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--purple);
-}
-
-/* headings */
 h2{
     font-size: var(--h2-size);
     font-family: var(--font-heading);
@@ -166,15 +110,69 @@ h4{
     font-weight: bold;
     padding: 0 0 5px 5px;
 }
+
 p{
     padding-left: 5px;
 }
 
-/* sections */
+/* header */
+header{
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 15px 0;
+    max-width: 450px;
+    margin: 0 auto;
+}
 
-#services section, #group-coaching section,
-#workshops section,
-#online section {
+header p{
+    font-style: italic;
+    padding: 10px 0 40px 0;
+}
+
+header h1{
+    font-family: var(--font-heading);
+    font-size: var(--h1-size);
+}
+
+/* nav menu */
+nav{
+    background-color: var(--yellow);
+    padding: 15px;
+}
+
+nav h2{
+    font-size: var(--nav-h2-size);
+    font-style: italic;
+    font-family: var(--font-body);
+    font-weight: bold;
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    margin: 10px 0;
+    background-color: var(--white);
+}
+
+nav ul li a{
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--purple);
+}
+
+/*-- our-services sections --*/
+
+.our-services {
     padding: 10px;
     margin: 15px;
     background-color: var(--white);
@@ -194,29 +192,26 @@ p{
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
-    list-style: none;
     padding: 0 10px 10px 10px;
     margin: 20px 10px;
 }
 
 #why-choose-us li{
-    background-color: var(--teal);
     padding: 30px 0;
     border-radius: 10px;
     font-weight: bold;
-    
 }
 
-#why-choose-us li.one{ 
+#why-choose-us li:nth-child(1){ 
     background-color: var(--teal);
 }
-#why-choose-us li.two{
+#why-choose-us li:nth-child(2){
     background-color: var(--lavender);
 }
-#why-choose-us li.three{
+#why-choose-us li:nth-child(3){
     background-color: var(--yellow);
 }
-#why-choose-us li.four{
+#why-choose-us li:nth-child(4){
     background-color: var(--white);
 }
 
@@ -255,13 +250,11 @@ p{
     padding: 0 10px 10px 10px;
 }
 
-#first-step h2{
+#first-step h2, #first-step p{
     text-align: left;
-    padding: 10px 0 5px 5px;
+    padding: 5px 0 5px 10px;
 }
-#first-step p{
-    padding: 10px;
-}
+
 
 #first-step a {
     display: block;
